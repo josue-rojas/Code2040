@@ -17,10 +17,6 @@ print r.text
 #if doing it this way ignore everything else
 """
 text =  r.text #not neccesary but just wanted to see the word
-info = json.loads(r.text)
-print info
-print
-print info['needle']
 print text
 p = re.compile('\w+') #find all words (just the pattern)
 words = p.findall(text)
